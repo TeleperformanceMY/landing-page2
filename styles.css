@@ -435,6 +435,7 @@ left:15%;
   
 
 @media only screen and (max-width: 768px) {
+    
     .company-description {
         font-size: 24px;
     }
@@ -446,21 +447,19 @@ left:15%;
     .button {
         padding: 8px 16px;
     }
-}
-@media only screen and (max-width: 768px) {
+}@media only screen and (max-width: 768px) {
     /* For inverted-2 */
     .inverted-2 {
-        top: 40%;
-        right: 10%;
-        transform: translate(-50%, -50%) rotate(45deg);
-        opacity: 0.5; /* Make it semi-transparent */
+        display: none; /* Hide this element */
     }
 
     /* For inverted-3 */
     .inverted-3 {
-        top: 60%;
-        left: 15%;
+        position: absolute;
+        top: 5%;
+        left: 5%;
         transform: translate(-50%, -50%) rotate(20deg);
+        color: hotpink; /* Change color to hot pink */
     }
 
     /* For inverted-4 */
@@ -470,9 +469,11 @@ left:15%;
 
     /* For inverted-5 */
     .inverted-5 {
-        top: 30%;
-        left: 40%;
+        position: absolute;
+        top: 5%;
+        right: 5%;
         transform: translate(-50%, -50%) rotate(-30deg);
+        color: purple; /* Change color to purple */
     }
 
     /* For inverted-6 */
@@ -482,29 +483,16 @@ left:15%;
 
     /* For inverted-7 */
     .inverted-7 {
-        top: 20%;
-        left: 60%;
-        transform: translate(-50%, -50%) rotate(10deg);
+        display: none; /* Hide this element */
     }
 
     /* For inverted-8 */
     .inverted-8 {
-        top: 50%;
-        right: 25%;
-        transform: translate(-50%, -50%) rotate(60deg);
+        display: none; /* Hide this element */
     }
 
     /* For d-1 */
     .d-1 {
         display: none; /* Hide this element */
-    }
-
-    /* Randomly pick two elements to display on top of the video */
-    .inverted-3,
-    .inverted-5 {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
     }
 }
