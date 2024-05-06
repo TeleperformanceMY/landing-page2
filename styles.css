@@ -25,14 +25,18 @@ body {
     box-sizing: border-box;
     padding: 15px 0;
    flex-shrink: 0;
+  
+  position: auto; /* Stick to the bottom */
+  top: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    position: absolute; /* Stick to the top */
-    top: 0;
-    width: 100%;
+      top: 0;
+    width: auto;
+    height: auto; /* Adjusted height */
     z-index: 10;
     padding: 20px 0; /* Added padding top and bottom */
 }
-
+ 
+ 
 .company-description {
     font-family: 'KG First Time In Forever', sans-serif;
     font-size: 32px;
@@ -152,22 +156,21 @@ body {
 }
 
 
-  .hover-4 {
+.hover-4 {
     border: 8px solid;
-    border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
-    -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
-       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
-      conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
-       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
-      linear-gradient(#000 0 0) padding-box no-repeat;
+    border-image: repeating-linear-gradient(135deg, #F8CA00 0 10px, #E97F02 0 20px, #BD1550 0 30px) 8;
+    -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 / 200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
     transition: .2s, -webkit-mask-position .3s .3s;
-    position: fixed;
-    top: 65%;
-    left: 10%;
-    transform: translate(-40%, -50%)rotate(350deg);
+    position: absolute;
+    bottom: -610px;
+    left: 140px;
+    left: 12%;
+    transform: translate(-40%, -50%) rotate(350deg);
     font-family: 'Your Handwritten Font', cursive;
-    font-size:xx-large;
-  }
+    font-size: 37px;
+}
+
+
   
   .hover-4:hover {
     --_i: 100%;
@@ -177,76 +180,66 @@ body {
   
 .inverted-2 {
     padding: 10px;
-    background:
-      conic-gradient(from 135deg at top   ,rgba(204, 0, 79, 0.8) 90deg,#000 0)  ,
-      conic-gradient(from -45deg at bottom,rgba(204, 0, 79, 0.8) 90deg,#000 0)  ,
-      conic-gradient(from 135deg at top   ,rgba(204, 0, 79, 0.8) 90deg,#0000 0),
-      conic-gradient(from -45deg at bottom,rgba(204, 0, 79, 0.8) 90deg,#0000 0),
-      #000;
-    -webkit-background-clip: text,text,padding-box,padding-box,text;
-            background-clip: text,text,padding-box,padding-box,text;
+    background: conic-gradient(from 135deg at top, rgba(204, 0, 79, 0.8) 90deg, #000 0), conic-gradient(from -45deg at bottom, rgba(204, 0, 79, 0.8) 90deg, #000 0), conic-gradient(from 135deg at top, rgba(204, 0, 79, 0.8) 90deg, #0000 0), conic-gradient(from -45deg at bottom, rgba(204, 0, 79, 0.8) 90deg, #0000 0), #000;
+    -webkit-background-clip: text, text, padding-box, padding-box, text;
+    background-clip: text, text, padding-box, padding-box, text;
     background-size: 100% 50%;
-    background-position: 50% -100%,50% 200%;
+    background-position: 50% -100%, 50% 200%;
     background-repeat: repeat-x;
-    transition: 0.4s linear,background-position 0.3s 0.5s;
+    transition: 0.4s linear, background-position 0.3s 0.5s;
     position: fixed;
-    top: 65%;
-    right:  5%;
-    transform: translate(-50%,-50%)rotate(30deg);
+    top: 6%;
+    right: 63%;
+    transform: translate(-50%, -50%) rotate(350deg);
     font-family: 'Your Handwritten Font', cursive;
-    font-size:xx-large;
-  }
+    font-size: xx-large;
+}
   .inverted-2:hover {
     background-position: 50% 0,50% 100%;
     background-size: 10% 50%;
     transition: 0.3s,background-size 0.4s 0.3s linear;
   }
+
   .inverted-3 {
-    padding: 0 10px;
-    line-height: 1em;
-    background:
-      linear-gradient(#fff 0 0),
-      linear-gradient(rgba(204, 0, 79, 0.8) 0 0),
-      #000;
-    -webkit-background-clip: text,padding-box;
-            background-clip: text,padding-box;
-            background-size: 100% 50%;
-            background-position: 50% -100%,50% 200%;
-            background-repeat: no-repeat;
-            transition: 0.4s linear,background-position 0.3s 0.5s;
-            position: fixed;
-            top: 85%;
-            right:  5%;
-            transform: translate(-50%,-50%)rotate(30deg);
-            font-family: 'Your Handwritten Font', cursive;
-            font-size:xx-large;
+      padding: 0 10px;
+      line-height: 1em;
+      background: linear-gradient(#fff 0 0), linear-gradient(rgba(204, 0, 79, 0.8) 0 0), #000;
+      -webkit-background-clip: text, padding-box;
+      background-clip: text, padding-box;
+      background-size: 100% 50%;
+      background-position: 50% -100%, 50% 200%;
+      background-repeat: no-repeat;
+      transition: 0.4s linear, background-position 0.3s 0.5s;
+      position: fixed;
+      top: 15%;
+      right: 3%;
+      transform: translate(-50%, -50%) rotate(350deg);
+      font-family: 'Your Handwritten Font', cursive;
+      font-size: xx-large;
   }
   .inverted-3:hover {
     background-position: 0 100%;
     box-shadow: 0 0.5em 0 0 #000;
   }
   .inverted-4 {
-    padding: 0 10px;
-    line-height: 1.4em;
-    background:
-      linear-gradient(#fff 0 0),
-      linear-gradient(rgba(204, 0, 79, 0.8) 0 0),
-      #000;
-    -webkit-background-clip:text,padding-box;
-    background-clip:text,padding-box;
-    
-    clip-path: polygon(-100vmax 0,100% 0,100% calc(100% + 0.7em),-100vmax calc(100% + 0.7em));
-    transition: 0.4s, box-shadow 0.3s 0.4s,background-position 0.3s 0.4s;
-    background-size: 100% 50%;
-    background-position: 50% -100%,50% 200%;
-    background-repeat: repeat-x;
-    position: fixed;
-    top: 30%;
-    right:  5%;
-    transform: translate(-50%,-50%)rotate(30deg);
-    font-family: 'Your Handwritten Font', cursive;
-    font-size:xx-large;
+      padding: 0 10px;
+      line-height: 1.4em;
+      background: linear-gradient(#fff 0 0), linear-gradient(rgba(204, 0, 79, 0.8) 0 0), #000;
+      -webkit-background-clip: text, padding-box;
+      background-clip: text, padding-box;
+      clip-path: polygon(-100vmax 0, 100% 0, 100% calc(100% + 0.7em), -100vmax calc(100% + 0.7em));
+      transition: 0.4s, box-shadow 0.3s 0.4s, background-position 0.3s 0.4s;
+      background-size: 100% 50%;
+      background-position: 50% -100%, 50% 200%;
+      background-repeat: repeat-x;
+      position: fixed;
+      top: 46%;
+      right: -5%;
+      transform: translate(-50%, -50%) rotate(337deg);
+      font-family: 'Your Handwritten Font', cursive;
+      font-size: xx-large;
   }
+  
   .inverted-4:hover {
     background-position: 0 100%;
     background-size: 100% 100%;
@@ -281,31 +274,22 @@ body {
     background-size: 50% 100%;
   }
   
-  
-  .inverted-6 {
-    background:
-      conic-gradient(            #fff 0 90deg, #fff0 0) bottom left,
-      conic-gradient(            rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) bottom left,
-      conic-gradient(from  90deg,#fff 0 90deg, #fff0 0) top left,
-      conic-gradient(from  90deg, rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) top left,
-      conic-gradient(from 180deg,#fff 0 90deg, #fff0 0) top right,
-      conic-gradient(from 180deg, rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) top right,
-      conic-gradient(from -90deg,#fff 0 90deg, #fff0 0) bottom right,
-      conic-gradient(from -90deg, rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) bottom right,
-      #000;
-    -webkit-background-clip:text,padding-box;
-            background-clip:text,padding-box;
+.inverted-6 
+{
+    background: conic-gradient(#fff 0 90deg, #fff0 0) bottom left, conic-gradient(rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) bottom left, conic-gradient(from 90deg, #fff 0 90deg, #fff0 0) top left, conic-gradient(from 90deg, rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) top left, conic-gradient(from 180deg, #fff 0 90deg, #fff0 0) top right, conic-gradient(from 180deg, rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) top right, conic-gradient(from -90deg, #fff 0 90deg, #fff0 0) bottom right, conic-gradient(from -90deg, rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) bottom right, #000;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
     background-size: 202% 202%;
     transition: 0.5s;
-     background-position: top;
+    background-position: top;
     background-repeat: repeat-x;
-      position: fixed;
-    top: 25%;
-    left:  25%;
-    transform: translate(-50%,-50%)rotate(30deg);
+    position: fixed;
+    top: 23%;
+    left: 15%;
+    transform: translate(-50%, -50%) rotate(-29deg);
     font-family: 'Your Handwritten Font', cursive;
-    font-size:xx-large;
-  }
+    font-size: xx-large;
+}
    
   .inverted-6:hover {  
     background-position: center;
@@ -447,6 +431,20 @@ left:15%;
     .button {
         padding: 8px 16px;
     }
+     
+  .hover-4 {
+    border: 8px solid;
+    border-image: repeating-linear-gradient(135deg, #F8CA00 0 10px, #E97F02 0 20px, #BD1550 0 30px) 8;
+    -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 / 200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .2s, -webkit-mask-position .3s .3s;
+    position: absolute;
+    top: 135%;
+    left: 53%;
+    transform: translate(-40%, -50%) rotate(30deg);
+    font-family: 'Your Handwritten Font', cursive;
+    font-size: xx-large;
+}
+  
 }@media only screen and (max-width: 768px) {
     /* For inverted-2 */
     .inverted-2 {
