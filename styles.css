@@ -158,18 +158,17 @@ body {
 }
 
 
-.hover-4 {
-    border: 8px solid;
+.hover-4 {    border: 8px solid;
     border-image: repeating-linear-gradient(135deg, #F8CA00 0 10px, #E97F02 0 20px, #BD1550 0 30px) 8;
     -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 / 200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
     transition: .2s, -webkit-mask-position .3s .3s;
     position: absolute;
-    bottom: -610px;
-    left: 140px;
-    left: 12%;
+    bottom: -551px;
+    left: calc(24vw - 139px);
+    background: rgba(222, 24, 67, 0.3);
     transform: translate(-40%, -50%) rotate(350deg);
     font-family: 'KG First Time In Forever', sans-serif;
-    font-size: 37px;
+    font-size: 43px;
 }
 
 
@@ -439,14 +438,14 @@ left:15%;
         -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 / 200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
         transition: .2s, -webkit-mask-position .3s .3s;
         position: absolute;
-        bottom: -150px;
-        left: 140px;
-        left: 26%;
+        bottom: -590px;
+        left: calc(107vw - 92px);
         background: rgba(222, 24, 67, 0.3);
         transform: translate(-40%, -50%) rotate(350deg);
         font-family: 'KG First Time In Forever', sans-serif, bold;
         font-size: 68px;
     }
+    
   
 }@media only screen and (max-width: 768px) {
     /* For inverted-2 */
