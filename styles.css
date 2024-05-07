@@ -463,12 +463,14 @@ left:15%;
         padding: 8px 16px;
     }
    
-        .video-section video {
-          max-width: 100%; /* Make the video responsive */
-          height: auto; /* Ensure aspect ratio is maintained */
-          width: 60%; /* Adjust the width as needed */
-          max-height: 40vh; /* Limit the height to 40% of the viewport height */
-        }
+    .video-section {
+        display: fixed;
+        justify-content: 60px;
+        align-items: center;
+        flex-grow: 1; /* Let this section grow to fill the remaining space */
+        padding: 50px 0; /* Added padding top and bottom */
+    }
+    
       
         .hover-4 {
             border: 8px solid;
@@ -548,3 +550,13 @@ left:15%;
         display: none; /* Hide this element */
     }
 }
+.content {
+    width: calc(100% - (2 * (your-header-width))); /* Adjust your-header-width accordingly */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content {
+      width: calc(100% - (2 * (your-mobile-header-width))); /* Adjust your-mobile-header-width accordingly */
+    }
+  }
