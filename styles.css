@@ -448,6 +448,7 @@ left:15%;
     color: #fff;
     padding: 20px;
     text-align: center;
+    width: 150%; 
   }
     .company-description {
         font-size: 24px;
