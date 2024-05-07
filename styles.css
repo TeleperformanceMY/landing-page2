@@ -419,7 +419,34 @@ left:15%;
   
 
 @media only screen and (max-width: 768px) {
-    
+     /* Header */
+  .header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 40px;
+    margin-right: 5px;
+  }
+  .company-description {
+    font-size: 12px;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
     .company-description {
         font-size: 24px;
     }
@@ -431,7 +458,7 @@ left:15%;
     .button {
         padding: 8px 16px;
     }
-    .hover-4 {
+    .hover-4  {
         border: 8px solid;
         border-image: repeating-linear-gradient(135deg, #F8CA00 0 10px, #E97F02 0 20px, #BD1550 0 30px) 8;
         -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 / 200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 88deg, #000 0) 0 var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
@@ -440,9 +467,9 @@ left:15%;
         bottom: -180px;
         left: 140px;
         left: 38%;
-        left: calc(96vw - 80px);
+        left: calc(124vw - 80px);
         background: rgba(222, 24, 67, 0.3);
-        transform: translate(-40%, -50%) rotate(30deg);
+        transform: translate(-40%, -50%) rotate(0deg);
         font-family: 'KG First Time In Forever', sans-serif, bold;
         font-size: 68px;
     }
