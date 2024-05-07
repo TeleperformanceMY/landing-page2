@@ -84,7 +84,7 @@ body {
     flex-shrink: 0;
     position: auto; /* Stick to the bottom */
     bottom: 0;
-    width: 100%;
+    width: auto;
      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     z-index: 10;
     padding: 20px 0; /* Added padding top and bottom */
