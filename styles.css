@@ -422,7 +422,7 @@ left:15%;
      /* Header */
   .header {
     background-color: #f2f2f2;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
@@ -458,6 +458,14 @@ left:15%;
     .button {
         padding: 8px 16px;
     }
+   
+        .video-section video {
+          max-width: 100%; /* Make the video responsive */
+          height: auto; /* Ensure aspect ratio is maintained */
+          width: 60%; /* Adjust the width as needed */
+          max-height: 40vh; /* Limit the height to 40% of the viewport height */
+        }
+      
     .hover-4  {
         border: 8px solid;
         border-image: repeating-linear-gradient(135deg, #F8CA00 0 10px, #E97F02 0 20px, #BD1550 0 30px) 8;
