@@ -426,7 +426,7 @@ left:15%;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     position: relative;
-    width: 150%; /* Make the header fill the entire width */
+    width: 220%; /* Make the header fill the entire width */
 
   }
 
@@ -448,7 +448,7 @@ left:15%;
     color: #fff;
     padding: 20px;
     text-align: center;
-    width: 150%; 
+    width: 220%; 
     z-index: 0;
   }
     .company-description {
@@ -463,44 +463,55 @@ left:15%;
         padding: 8px 16px;
     }
    
+ 
+     
     .video-section {
-        display: fixed;
-        justify-content: 60px;
-        align-items: center;
-        flex-grow: 1; /* Let this section grow to fill the remaining space */
-        padding: 50px 0; /* Added padding top and bottom */
+      display: flex;
+      justify-content: center;
+      padding: 10px 0; /* Adjust padding as needed */
+    }
+    
+    .video-container {
+      width: 80%; /* Set width to be 20% less than its current width */
+
+    }
+    
+    .video-container iframe {
+      width: 100%;
+      height: auto;
     }
     
       
-        .hover-4 {
-            border: 8px solid;
-            border-image: repeating-linear-gradient(135deg, #F8CA00 0 10px, #E97F02 0 20px, #BD1550 0 30px) 8;
-            -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 / 200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 88deg, #000 0) 0 var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
-            transition: .2s, -webkit-mask-position .3s .3s;
-            position: absolute;
-            bottom: -170px;
-            left: 140px;
-            left: 38%;
-            width: 170px;
-            left: calc(30vw - 73px);
-            background: rgba(204, 0, 79, 0.8);
-            box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 151px #bc13fe;
-            transform: translate(-24%, 188%) rotate(0deg);
-            font-family: 'KG First Time In Forever', sans-serif, bold;
-            font-size: auto;
-            z-index: 2;
-        }
-  
-    .hover-4:hover {
-        --_i: 100%;
-        color: rgba(77, 16, 101, 0.8);
-        text-shadow: 
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 151px #bc13fe;
-        transition: .3s, -webkit-mask-size .3s .3s;
-      }
+    .hover-4 {
+      border: 8px solid;
+      border-image: repeating-linear-gradient(135deg, #F8CA00 0 10px, #E97F02 0 20px, #BD1550 0 30px) 8;
+      -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 / 200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 88deg, #000 0) 0 var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
+      transition: .2s, -webkit-mask-position .3s .3s;
+      position: absolute;
+      bottom: -170px;
+      left: 140px;
+      left: 38%;
+      width: 170px;
+      left: calc(30vw - -525px);
+      background: rgba(204, 0, 79, 0.8);
+      box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 151px #bc13fe;
+      transform: translate(-24%, 188%) rotate(0deg);
+      font-family: 'KG First Time In Forever', sans-serif, bold;
+      font-size: auto;
+      z-index: 2;
+  }
+
+.hover-4:hover {
+  --_i: 100%;
+  color: rgba(77, 16, 101, 0.8);
+  text-shadow: 
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 151px #bc13fe;
+  transition: .3s, -webkit-mask-size .3s .3s;
+}
+    
 }@media only screen and (max-width: 768px) {
     /* For inverted-2 */
     .inverted-2 {
